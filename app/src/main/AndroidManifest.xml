@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.vuforia.samples.VideoPlayback"
+    package="com.vuforia.magicEye.VideoPlayback"
     android:versionCode="200"
     android:versionName="5.0">
 
@@ -90,7 +90,7 @@
         <!-- Splash Screen Activity -->
 
          <activity
-            android:name=".ui.ActivityList.ActivitySplashScreen"
+            android:name="com.vuforia.magicEye.VideoPlayback.ui.ActivityList.ActivitySplashScreen"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:noHistory="true"
@@ -103,14 +103,14 @@
          </activity>
         
          <activity
-            android:name=".ui.ActivityList.AboutScreen"
+            android:name="com.vuforia.magicEye.VideoPlayback.ui.ActivityList.AboutScreen"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             >
         </activity>
          
         <activity
-            android:name=".app.VideoPlayback.VideoPlayback"
+            android:name="com.vuforia.magicEye.VideoPlayback.app.VideoPlayback.VideoPlayback"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
         	android:theme="@style/SampleAppsTheme"
  	        android:launchMode="singleTask"
@@ -121,7 +121,7 @@
             This is the activity that holds the full screen media player.
         -->
         <activity android:label="@string/app_name"
-            android:name=".app.VideoPlayback.FullscreenPlayback"
+            android:name="com.vuforia.magicEye.VideoPlayback.app.VideoPlayback.FullscreenPlayback"
             android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize"
  	        android:launchMode="singleTask"
  	        android:screenOrientation="landscape"

@@ -2,9 +2,15 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/camera_overlay_layout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:layout_height="match_parent">
 
+    <RelativeLayout
+
+        android:id="@+id/backdrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        >
         <ProgressBar
             style="@android:style/Widget.ProgressBar"
             android:id="@+id/loading_indicator"
@@ -22,4 +28,53 @@
       android:layout_alignParentBottom="true"
       android:layout_centerHorizontal="true"
       android:layout_marginBottom="25dp"/>
+</RelativeLayout>
+
+    <FrameLayout
+        android:background="@color/semi_transparent_black"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="87dp"
+            android:background="@color/semi_transparent_black"
+            android:layout_height="wrap_content"/>
+        </FrameLayout>
+    <FrameLayout
+        android:id="@+id/linkFrame"
+        android:background="@color/white"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="TextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:padding="2dp"
+                android:gravity="center_vertical"
+                android:layout_toLeftOf="@+id/button"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="10dp"
+                android:layout_alignBottom="@+id/button"/>
+
+            <Button
+                android:text="Button"
+                android:background="@drawable/button_background"
+                android:textColor="@color/white"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_margin="2dp"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+    </FrameLayout>
 </RelativeLayout>
